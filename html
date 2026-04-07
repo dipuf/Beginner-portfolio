@@ -86,13 +86,19 @@
       </div>
       <div class="largebox">
         <div class="message">
-        <form>
-          
+        <form id = "contactForm">
           <input type = "text" id = "name" name = "username" placeholder="Your Name">
+           <small id="nameError" class="error"></small>
+
           <input type = "email" id = "email" name = "email" placeholder="Your Email">
-          <textarea  id = "message" name = "message" placeholder="Your Message" ></textarea>
+           <small id="emailError" class="error"></small>
+
+          <textarea  id = "message" placeholder="Your Message" ></textarea>
+           
+
+          <button type = "submit">Send Message</button>
         </form>
-        <button type = "submit">Send Message</button>
+        
       </div>  
       </div>
       <div class="bottom">
@@ -100,6 +106,6 @@
       </div>
       
   </div>
-
+<script src="inde.js"></script>
 </body>
 </html>
